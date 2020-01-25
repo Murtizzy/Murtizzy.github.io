@@ -12,17 +12,84 @@ body{
     justify-content: space-between;
 }
 
-.animated-text{
-    color: white;
-    position: absolute;
-    top: 10%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-    /* padding: 0 40px; */
-    height: 60px;
-    overflow: hidden;
-    background: none;
+.header-holder{
+    display: flex;
+    justify-content: center;
+}
 
+.header{
+    font-family: 'Roboto', sans-serif;
+    background: url("/images/header-bg-3.jpg");
+     /* #2c3e50; */
+    /* position: absolute; */
+    /* height: 140px; */
+    /* width: 100%; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* font-size: 42px; */
+    /* color: white; */
+    /* padding: 10px; */
+}
+.eh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    color: white
+}
+
+
+.name{
+    padding: 195px;
+    padding-left: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    color: white;
+
+}
+
+.about-me-container{
+    display: flex;
+    justify-content: space-between;
+    border-top: 6px solid rgb(189, 90, 60);
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+.about-me-section{
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px 179px 8px;
+    background-color: white;
+
+}
+
+.img-placeholder{
+    padding: 128px;
+    background: rgb(210,122,112);
+}
+
+.blinker { 
+    animation-name: blinker;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1,0,0,1);
+    animation-duration: 0.8s;  
+    display: inline-block;
+    width: 8px;
+    height: 100px;
+    margin-left: 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(white,.3);
+    font-size: 42px;
+    color:white;
+    transform: translate(-20px, -4px);
+}
+  
+@keyframes blinker { 
+    from { opacity: 1.0; } to { opacity: 0.0; }
 }
 
 .line{
@@ -32,7 +99,24 @@ body{
     line-height: 60px;
     background: none;
     padding: 0 20px;
+    text-align: left;
+
 }
+
+.animated-text{
+    color: white;
+    position: absolute;
+    /* top: 10%;
+    left: 15%;
+    transform: translate(-50%, -50%); */
+    /* padding: 0 40px; */
+    height: 60px;
+    overflow: hidden;
+    background: none;
+    padding-left: 20px;
+
+}
+
 
 .line:first-child{
     animation: anim 16s infinite;
@@ -67,60 +151,14 @@ body{
     }
 }
 
-.header{
-    font-family: 'Roboto', sans-serif;
-    background: url("/images/header-bg-3.jpg");
-     /* #2c3e50; */
-    /* position: absolute; */
-    /* height: 140px; */
-    /* width: 100%; */
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* font-size: 42px; */
-    /* color: white; */
-    /* padding: 10px; */
-}
-
-.name{
-    padding: 195px;
+.card-holder{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 42px;
-    color: white
-}
-
-.img-placeholder{
-    padding: 128px;
-    background: rgb(210,122,112);
-}
-
-.blinker { 
-    animation-name: blinker;
-    animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(1,0,0,1);
-    animation-duration: 0.8s;  
-    display: inline-block;
-    width: 8px;
-    height: 100px;
-    margin-left: 10px;
-    border-radius: 3px;
-    box-shadow: 0 0 10px rgba(white,.3);
-    font-size: 42px;
-    color:white;
-    transform: translate(-20px, -4px);
-}
-  
-@keyframes blinker { 
-    from { opacity: 1.0; } to { opacity: 0.0; }
+    justify-content: space-evenly;
 }
 
 .card{
-    padding-top: 10px;
-    padding: 36px;
     width: auto;
+    padding: 14px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,13 +170,15 @@ body{
 .project-name{
     font-weight: 700;
     font-size: 28px;
-    padding-left: 18px;
+    display: flex;
+    justify-content: center;
 }
 
 .card-content{
     display: flex;
-    padding: 4px;
-
+    flex-direction: column;
+    padding: 2px;
+    padding-bottom: 16px;
 }
 /* Changing the width changes how wide each body of text is able to be. PWU components can be added around images to change format of explanations */
 .project-writeup{
@@ -164,8 +204,12 @@ body{
     border-right-width: 2px; */
 }
 
+.tag:hover{
+    color: #E27F71
+}
+
 .spacerH{
-    padding: 60px;
+    padding: 16px;
 }
 
 .repo-button{
@@ -176,13 +220,60 @@ body{
     font-weight: 400;
 }
 .fake{
-    color: rgb(189,60,98);
-    color: rgb(195,81,104);
-    color: rgb(202,92,103);
-    color: rgb(204,100,99);
-    color: rgb(210,122,112);
-    color: rgb(210,122,110);
-    color: rgb(211,117,107);
-    color: rgb(212,121,116);
-    color: rgb(215, 136, 112);
+    color: #F48B6C;
+    color: #EFA56A;
+    color: #E27F71;
+    color: #BB4363;
+    color: #CC5E6B;
+    color: ;
+    color: ;
+    color: ;
+    color: ;
 }
+
+.card-holder{
+    display:flex;
+    
+}
+
+.card-content:hover {
+    background-color: red;
+ }
+
+/* 
+.trying{
+    position: relative;
+    width: auto;
+    left: 0.25em;
+    margin: 75px;
+}
+
+.trying1{
+    width: 100%;
+    background-color: red;
+    display: flex;
+}
+
+.trying2{
+    display: none;
+    
+}
+
+.trying1:focus{
+    background-color: red;
+    transform: perspective(500px) translateZ(150px);
+} 
+
+.trying1:focus > .trying2{
+    display: block;
+    background-color: white;
+    overflow-wrap: break-word;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 256px;
+} 
+
+.expansion-container{
+    background-color: red;
+    display: flex;
+} */
