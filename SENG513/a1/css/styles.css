@@ -1,0 +1,97 @@
+body{
+    background-color: #b44f66;
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 48px;
+}
+/* This page uses bowlby and lobster*/
+
+/* 
+font-family: 'Bangers', cursive;
+font-family: 'Bowlby One SC', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Signika', sans-serif;
+*/
+
+/* 
+#6e5773
+#d45d79
+#ea9085
+#e9e2d0
+*/
+
+
+.title-centerer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #e9e2d0;
+    text-shadow: 1px 2px #6e5773;
+
+}
+
+.centerer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+}
+
+#lesson-box{
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 20px;
+}
+
+.lesson{
+    background-color: #ea9085;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #e9e2d0;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    text-shadow: 1px 2px #6e5773;
+
+}
+
+#lesson1{
+    grid-column: 1/-1;
+}
+
+#lesson2{
+    grid-row: span 2;
+}
+
+#lesson4{
+    grid-column: span 2;
+}
+
+#lesson5{
+    grid-column: span 2;
+}
+
+.lecture-num{
+    font-weight: 800px;
+    font-size: 32px;
+    font-family: 'Lobster', cursive;
+}
+
+.lecture-name{
+    font-weight: 400px;
+    font-size: 20px;
+    /* font-family: 'Lobster', cursive; */
+    font-family: 'Bowlby One SC', cursive;
+
+}
+
+.lesson:hover{
+    transform: perspective(500px) translateZ(28px);
+}
