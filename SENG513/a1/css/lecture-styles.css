@@ -9,7 +9,7 @@ body{
 #center-title{
     background-color: #ea9085;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     box-shadow: 0 4px 6px 0 hsla(0, 1%, 32%, 0.2);
     text-shadow: 1px 2px #6e5773;
@@ -42,7 +42,19 @@ body{
     font-size: 24px;
     font-family: 'Signika', sans-serif;
     background-color: #ea9085;
+    display: flex;
+    word-break: break-all;
+    box-shadow: 0 4px 6px 0 hsla(0, 1%, 32%, 0.2);
+    text-shadow: 1px 2px #6e5773;
 
+}
+#contenth{
+    margin-top: 40px;
+    font-size: 24px;
+    font-family: 'Signika', sans-serif;
+    background-color: #ea9085;
+    display: flex;
+    flex-direction: column;
     word-break: break-all;
     box-shadow: 0 4px 6px 0 hsla(0, 1%, 32%, 0.2);
     text-shadow: 1px 2px #6e5773;
@@ -54,7 +66,26 @@ body{
     background-color: #6e5773;
 }
 
+#inner-content{
+    padding-left: 8px;
+}
 
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+#img-holder{
+    background-color: #6e5773;
+    width: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+#nav-button{
+    text-decoration: none;
+    color: #e9e2d0;
+}
 
 /* 
 font-family: 'Bangers', cursive;
