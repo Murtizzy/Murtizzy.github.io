@@ -2,6 +2,8 @@ body{
     background-color: #b44f66;
     font-family: 'Bowlby One SC', cursive;
     font-size: 42px;
+    color: #e9e2d0;
+
 }
 
 
@@ -97,12 +99,16 @@ body{
 th{
     padding-left: 30px;
     padding-right: 30px;
+    text-shadow: 1px 2px black;
+
 }
 
 td{
     padding-left: 30px;
     padding-right: 30px;
     font-family: 'Bowlby One SC', cursive;
+    text-shadow: 1px 2px black;
+
 
 }
 
@@ -117,3 +123,88 @@ td{
     box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
     text-shadow: 1px 2px #6e5773;
 }
+
+
+/* Lecture Styling */
+
+#center-title{
+    background-color: #ea9085;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 4px 6px 0 hsla(0, 1%, 32%, 0.2);
+    text-shadow: 1px 2px #6e5773;
+
+}
+
+.container{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
+
+#empty1{
+    flex: 1 6 20%;
+    order: 1;
+}
+#empty2{
+    flex: 1 6 20%;
+    order: 3;
+}
+
+.content-wrapper{
+    flex-direction: column;
+    flex: 3 1 60%;
+    order: 2;
+}
+
+#content{
+    margin-top: 40px;
+    font-size: 24px;
+    font-family: 'Signika', sans-serif;
+    background-color: #ea9085;
+    display: flex;
+    word-break: break-all;
+    box-shadow: 0 4px 6px 0 hsla(0, 1%, 32%, 0.2);
+    text-shadow: 1px 2px #6e5773;
+
+}
+#contenth{
+    margin-top: 40px;
+    font-size: 24px;
+    font-family: 'Signika', sans-serif;
+    background-color: #ea9085;
+    display: flex;
+    flex-direction: column;
+    word-break: break-all;
+    box-shadow: 0 4px 6px 0 hsla(0, 1%, 32%, 0.2);
+    text-shadow: 1px 2px #6e5773;
+
+}
+
+#img-placeholder{
+    padding: 128px;
+    background-color: #6e5773;
+}
+
+#inner-content{
+    padding-left: 8px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+#img-holder{
+    background-color: #6e5773;
+    width: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+#nav-button{
+    text-decoration: none;
+    color: #e9e2d0;
+}
+
