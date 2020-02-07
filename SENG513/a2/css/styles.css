@@ -1,0 +1,59 @@
+body{
+    /* background: url('/images/mathbkgd.jpg'); */
+    background-color: #c8d6e5;
+}
+
+/* 
+font-family: 'Acme', sans-serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Francois One', sans-serif;
+font-family: 'Patrick Hand', cursive;
+*/
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#inside-container{
+    background-color: #576574;
+    padding: 20px;
+}
+
+#calculator{
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    grid-auto-rows: minmax(50,250);
+    grid-row-gap: 10px;
+    grid-column-gap: 5px;
+}
+
+#butt1{
+    grid-column: span 4;
+    padding: 10px;
+    font-size: 60px;
+
+}
+
+
+#butt19{
+    grid-column: span 2;
+}
+
+
+button{
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background-color: #ff6b6b;
+    outline: none;
+    font-size: 28px;
+    font-family: 'Francois One', sans-serif;
+}
+
+.operator{
+    background-color: #feca57;
+}
