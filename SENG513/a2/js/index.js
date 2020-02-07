@@ -28,7 +28,6 @@ function validExp(){
     let display = document.getElementById("butt1").value;
     for(let i=1; i<display.length;i++){
        if(display[i]=='/'){
-           console.log(display.slice(i+1));
             let denominator = eval(display.slice(i+1));
             if(denominator != 0){
                 return true;

@@ -3,14 +3,6 @@ body{
     background-color: #c8d6e5;
 }
 
-/* 
-font-family: 'Acme', sans-serif;
-font-family: 'Permanent Marker', cursive;
-font-family: 'Caveat', cursive;
-font-family: 'Francois One', sans-serif;
-font-family: 'Patrick Hand', cursive;
-*/
-
 #container{
     display: flex;
     justify-content: center;
@@ -56,4 +48,10 @@ button{
 
 .operator{
     background-color: #feca57;
+}
+
+@media only screen and (max-width: 480px){
+    body{
+        background-color:red;
+    }
 }
