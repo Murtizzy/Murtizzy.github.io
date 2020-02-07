@@ -15,6 +15,7 @@ function go(){
 
 function show(button){
     let butt = document.getElementById(button).innerHTML;
+    console.log("hi");
     document.getElementById("butt1").value += butt; 
 }
 
