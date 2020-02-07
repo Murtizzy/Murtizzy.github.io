@@ -1,31 +1,183 @@
 <!DOCTYPE html>
 <html>
     <head>    
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">    
         <title>Web-App Overview</title>
-        <link rel="stylesheet" href="css/lecture-styles.css">
+        <!-- <link rel="stylesheet" href="css/lecture-styles.css"> -->
+        <link rel="stylesheet" href="css/styles.css">
+
         <link href="https://fonts.googleapis.com/css?family=Bangers|Bowlby+One+SC|Lobster|Signika&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div id="center-title">Lecture 1: Web-App Overview</div>
+        <div id="center-title">
+            <a id="nav-button" href="index.html"><i class="las la-home"></i></a>
+            Lecture 1: Web-App Overview
+            <a id="nav-button" href="lecture2.html">Next</a>
+        </div>
         <div class="container">
             <div id="empty1"></div>
             <div class="content-wrapper">
 
 
-                <div id="content">
-                    The easiest thing to compare Web Apps to is client-server apps 
-                    with a GUI.
-                </div>
-                <div id="img-placeholder"></div>
-                <div id="content">
-                    However there are some very important differences that we'll get into.
-                </div>
-                <div id="content">
-                    Client-server development involves communication between two machines. 
-                    The client makes requests to the server, and displays to the user whatever
-                    it gets<br> from responses to those requests. 
+                <div id="contenth">
+                    <div id="inner-content">
+                        The easiest thing to compare Web Apps to is client-server apps 
+                        with a GUI.
+                    </div>
+                    <div id="img-holder">
+                        <img src="images/client-server.png" alt="">
+                        The client sends a request to the server, which sends back a response. The output is shown to the client, visually, on their monitor.
+                    </div>
                 </div>
                 
+
+
+                <div id="content">
+                    <div id="inner-content">
+                        However there are some very important differences that we'll get into.
+                    </div>
+                </div>
+
+                <div id="contenth">
+                    <div id="inner-content">
+                        Client-server development involves communication between two machines. 
+                    The client makes <br>requests to the server, and displays to the user whatever
+                    it gets from responses to those requests. 
+                    </div>
+
+                    <div id="img-holder">
+                        <img src="images/connections.png" alt="Shoddy drawing of the communication between server and client machines"><br>
+                        Shoddy drawing of the communication between server and client machines
+                    </div>
+                </div>
+
+                <div id="content">
+                    <div id="inner-content">
+                        Unlike most code we're familiar with, this software runs on two parts
+                    the Client, and the Server.<br>
+                    </div>
+                </div>
+
+                <div id="content">
+                    <div id="inner-content">
+                        The client:
+                    <ul>
+                        <li>Runs client-side software</li>
+                        <li>Usually involves a UI or GUI component</li>
+                        <li>Often has to support many different environments</li>
+                    </ul>
+                    </div>
+                </div>
+                
+                <div id="content">
+                    <div id="inner-content">
+                        The server:
+                    <ul>
+                        <li>Runs server-side software</li>
+                        <li>Usually no UI or GUI (sometimes for configuration)</li>
+                        <li>Usually supports few OSes, often just one</li>
+                    </ul>
+                    </div>
+                </div>
+
+                <div id="content">
+                    <div id="inner-content">
+                        Why do this?
+                    <ul>
+                        <li>To save money</li>
+                        <li>Ease of compatibility</li>
+                        <li>Security</li>
+                    </ul>
+                    </div>
+
+                    
+                </div>
+
+                <div id="content">
+                    <div id="inner-content">
+                        What does a server need? <br><br>
+                        Hardware
+                        <ul>
+                            <li>Usually some powerful, redundant, and backed up often... Meaning it's very expensive</li>
+                        </ul>
+                        Software
+                        <ul>
+                            <li>Can be implemented in any language</li>
+                            <li>Has full access to all resources of the server</li>
+                        </ul>
+                        Network
+                        <ul>
+                            <li>Any network can be used (bluetooth, laser, wifi, etc)</li>
+                            <li>Usually a local network with high bandwidth and low latency</li>
+                            <li>Over any port and any protocol</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="content">
+                    <div id="inner-content">
+                        What does a client need?<br><br>
+                        Client Hardware
+                        <ul>
+                            <li>Usually not very powerful and cheap</li>
+                        </ul>
+                        Client software
+                        <ul>
+                            <li>Needs to be distributed to customers</li>
+                            <li>Needs to be installed</li>
+                            <li>Needs to be maintained</li>
+                            <li>Needs to be synchronized with the server version (version control)</li>
+                            <li>Can access any resources of the client
+                                <ul><li>Full hardware acess</li></ul>
+                            </li>
+                            <li>Can be implemented in any language</li>
+                            <li>Can use any library</li>
+                            <li>May need different versions for different Operating Systems</li>
+                        
+                        </ul>
+                    </div>
+                </div>
+                
+                <div id="content">
+                    <div id="inner-content">
+                        Server software (or web servers)
+                        <ul>
+                            <li>Are the same as server software in the general client-server model</li>
+                            <li>Can be implemented in basically any language (as most languages can be simulated in JS)</li>
+                            <li>Has full access to all resources of the server</li>
+                        </ul>
+                        The network
+                        <ul>
+                            <li>Must use internet, and is usually confined to standard ports</li>
+                            <li>Limited protocols, limited bandwidth, and high latency</li>
+                        </ul>
+                        The client OS
+                        <ul>
+                            <li>Can be any (as long as a good browser runs on it)</li>
+                            <li>^ this is because the browser "becomes the OS" for the application</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="content">
+                    <div id="inner-content">
+                        Client Software
+                        <ul>
+                            <li>Downloaded automatically and runs in your browser</li>
+                            <li>User doesn't need to manually synchronize or maintain it</li>
+                            <li>Can access only a very limited set of resources on the client machine</li>
+                            <li>Implementation language/libraries:
+                                <ul>
+                                    <li>limited choices (whatever is supported by the browser)</li>
+                                    <li>Typically this is HTML + CSS + JavaScript</li>
+                                    <li>However there exist other outdated choices (looking at you PHP)</li>
+                                </ul>
+                            </li>
+                            <li>Communicates with the server using the HTTP Protocol (most of the time)</li>
+                        </ul>
+                    </div>
+                </div>
+
 
             </div>
             <div id="empty2"></div>

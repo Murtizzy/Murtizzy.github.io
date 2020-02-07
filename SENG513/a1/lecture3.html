@@ -1,17 +1,189 @@
 <!DOCTYPE html>
 <html>
-    <head>    
-        <title>Web-App Overview</title>
-        <link rel="stylesheet" href="css/lecture-styles.css">
+    <head>
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">    
+        <title>CSS Basics</title>
+        <!-- <link rel="stylesheet" href="css/lecture-styles.css"> -->
+        <link rel="stylesheet" href="css/styles.css">
+
         <link href="https://fonts.googleapis.com/css?family=Bangers|Bowlby+One+SC|Lobster|Signika&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div id="center-title">Lecture 3: CSS - Basics</div>
+        <div id="center-title">
+            <a id="nav-button" href="index.html"><i class="las la-home"></i></a>
+            <a id="nav-button" href="lecture2.html">Prev</a>
+            Lecture 3: CSS - Basics
+            <div>Coming Soon!</div>
+
+        </div>
         <div class="container">
             <div id="empty1"></div>
-            <div id="content">
-                The easiest thing to compare
-                
+            <div class="content-wrapper">
+
+                <div id="contenth">
+                    <div id="inner-content">
+                    What is the DOM?<br><br>
+                    The DOM (Document Object Model) is a tree-like representation of a web-page. As this name <br>suggests, it is object oriented.
+                    It serves as an interface for programming and manipulating <br>HTML (and XML)<br>
+                </div>
+                    <div id="img-holder">
+                        <img src="images/DOM.png" alt="">
+                        Example of a DOM tree
+                    </div>
+                </div>
+
+                <div id="content">
+                    <div id="inner-content">
+                        Each dom object has a <i>type</i> and also a set of <i>attributes</i>. One of these is the <b>style</b> attribute.
+                    </div>
+                </div>
+
+                <div id="contenth">
+                    <div id="inner-content">
+                        CSS (Cascading Style Sheets) is all about using this <b>style</b> attribute to make things pretty.<br>
+                        Put otherwise, it is a language used to define how to render elements in HTML.
+                        <ul>
+                            <li>It allows us to set the styling properties of individual/groups of elements</li>
+                            <li>The basic building block of CSS is a "CSS declaration"</li>
+                        </ul>
+                    </div>
+                    <div id="img-holder">
+                        <img src="images/css-declarations.png" alt="Format and examples of some CSS declarations"><br>
+                        Format and examples of some CSS declarations
+                    </div>
+                </div>
+
+                <div id="contenth">
+                    <div id="inner-content">
+                        To group CSS declarations we use blocks of declarations
+                        <ul>
+                            <li>The block starts with a left curly bracket '{' and ends with a right curly bracket '}'</li>
+                            <li>Each individual declaration is separated by a semicolon</li>
+                        </ul>
+                    </div>
+                    <div id="img-holder">
+                        <img src="images/block-declaration.png" alt="Example of a block of declarations in CSS"><br>
+                        Example of a block of declarations in CSS
+                    </div>
+                </div>
+
+                <div id="contenth">
+                    <div id="inner-content">
+                        CSS Rulesets are used to apply a block of declarations to an element/group of elements<br>
+                        These are also sometimes called 'CSS Selectors'
+
+                    </div>
+                    <div id="img-holder">
+                        <img src="images/css-ruleset.png" alt="Generic format for a CSS ruleset"><br>
+                        Generic format for a CSS ruleset
+                    </div>
+                </div>
+
+                <div id="contenth">
+                    <div id="inner-content">And that's it! A CSS file is just a list of these rulesets!</div>
+                    <div id="img-holder">
+                        <img src="images/css-thissite.png" alt="The CSS for this website!"><br>
+                        The CSS for this website!
+                    </div>
+                </div>
+
+                <div id="contenth">
+                    <div id="inner-content">Now, there are different kinds of CSS, and any combination of them can be used at once.</div>
+                </div>
+
+                <div id="contenth">
+                    <div id="inner-content">Inline CSS is specified using the '<i>style</i>' attribute of an HTML element.
+                        <ul>
+                            <li>This can include one or more declarations, separated by semicolons</li>
+                            <li>No curly brackets or selectors are needed, declarations only apply to one element</li>
+                            <li>If multiple sheets are used, inline styling is given the highest priority</li>
+                            <li>Not recommended for manual HTML creation
+                                <ul><li>Useful for automated HTML creation though!</li></ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="img-holder">
+                        <img src="images/inline-example.png" alt="Example of inline CSS Styling"> <br>
+                        Example of inline CSS Styling
+                    </div>
+                </div>
+
+                <div id="contenth">
+                    <div id="inner-content">
+                        Embedded CSS sheets are used within the HTML file still, but use the <'style'> tag.
+                        <ul>
+                            <li>Full CSS syntax, multiple rules, selectors, etc.</li>
+                            <li>If used with multiple sheets, has the 2nd highest priority (behind inline)</li>
+                            <li>Can have multiple embedded CSS sheets within a single document</li>
+                            <li>Recommended only for experimentation. Once you know what you want, you should migrate to external CSS</li>
+                        </ul>
+                    </div>
+                    <div id="img-holder">
+                        <img src="images/embedded-css.png" alt="Example of embedded CSS Styling"><br>
+                        Example of embedded CSS Styling
+                    </div>
+                </div>
+
+                <div id="contenth">
+                    <div id="inner-content">
+                        External CSS sheets are saved as separate files, and loaded (included) into HTML via <'link'> <br>tags.<br>
+                        <ul>
+                            <li>External CSS supports full CSS syntax, multiple rules, selectors, etc.</li>
+                            <li>File extension is '.css' by convention</li>
+                            <li>3rd highest priority if used in conjunction with other kinds of CSS stylesheets</li>
+                            <li>Recommended for just about every scenario</li>
+                        </ul>
+                    </div>
+                    <div id="img-holder">
+                        <img src="images/external-css.png" alt="Example of external CSS styling"> <br>
+                        Example of external CSS styling
+                    </div>
+                </div>
+
+                <div id="contenth">
+                    <div id="inner-content">
+                        One stylesheet can import another (guess what we call these: <b>Imported Stylesheets!</b>)<br>
+                        <ul>
+                            <li>This allows for more modular design</li>
+                            <li>But isn't very useful for smaller sites</li>
+                        </ul>
+                    </div>
+                    <div id="img-holder">
+                        <img src="images/imported-css.png" alt="Example of imported CSS Styling"><br>
+                        The rules in the imported sheet 'master.css' would have the lowest priority of all
+                    </div>
+                </div>
+
+                <div id="contenth">
+                    <div id="inner-content">CSS Units<br> 
+                        Relative:
+                        <ul>
+                            <li>'em' is relative to the font size of the current element
+                                <ul><li>eg. 3em = three times as big as font size</li></ul>
+                            </li>
+                            <li>'rem' is relative to the font size of the root element/li>
+                            <li>'%' depends on the attribute, but it's usually the size of the viewport
+                                <ul><li>eg. 'width:100%' means the entire width of the display</li></ul>
+                            </li>
+                        </ul>
+                        Absolute:
+                        <ul>
+                            <li>'px' = pixel size</li>
+                            <li>'in' = inches</li>
+                            <li>'cm,mm' = centimeters, millimeters</li>
+                            <li>'pt,pc' = points (these are fractions of inches)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="contenth">
+                    <div id="inner-content">Can't forget about the box model!</div>
+                   <div id="img-holder">
+                       <img src="images/box-model.png" alt="Visualization of the box model of HTML elements"><br>
+                       Every HTML element has this. It's called the box model, and this is about the most ubiquitous visual for teaching it.
+                   </div>
+                </div>
+
             </div>
             <div id="empty2"></div>
         </div>
