@@ -50,11 +50,26 @@ button{
     background-color: #feca57;
 }
 
+/* @keyframes shake{
+    0% {transform: translate(10%)}
+    33% {transform: translate(-10%)}
+    66% {transform: translate(10%)}
+    100% {transform: translate(0%)}
+} */
+
 @media only screen
 and (min-device-width: 320px) 
 and (max-device-width: 480px)
 and (-webkit-min-device-pixel-ratio: 2){
     body{
         background-color: red;
+    }
+
+    #calculator{
+        display: grid;
+        grid-template-columns: repeat(4,50px);
+        grid-auto-rows: minmax(50,250);
+        grid-row-gap: 10px;
+        grid-column-gap: 5px;
     }
 }

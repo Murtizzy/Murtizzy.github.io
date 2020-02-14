@@ -1,3 +1,7 @@
+$(document).ready(function() {
+    console.log($("#butt5").html)
+});
+
 
 function go(){
     let display = document.getElementById("butt1");
@@ -8,8 +12,8 @@ function go(){
         display.value = eval(display.value);
     }
     else{
-        display.style.backgroundColor = "#ee5253";
         display.value = temp;
+        display.style.backgroundColor = "#ee5253";
     }
 }
 
