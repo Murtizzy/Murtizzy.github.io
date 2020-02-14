@@ -71,5 +71,10 @@ and (-webkit-min-device-pixel-ratio: 2){
         grid-auto-rows: minmax(50,200);
         grid-row-gap: 20px;
         grid-column-gap: 10px;
+        touch-action: manipulation;
+    }
+
+    button{
+        font-size: 60px;
     }
 }
