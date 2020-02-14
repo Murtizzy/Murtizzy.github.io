@@ -61,10 +61,6 @@ button{
 and (min-device-width: 320px) 
 and (max-device-width: 480px)
 and (-webkit-min-device-pixel-ratio: 2){
-    body{
-        background-color: red;
-    }
-
     #calculator{
         display: grid;
         grid-template-columns: repeat(4,200px);
@@ -76,5 +72,9 @@ and (-webkit-min-device-pixel-ratio: 2){
 
     button{
         font-size: 60px;
+    }
+
+    #inside-container{
+        padding: 40px;
     }
 }
