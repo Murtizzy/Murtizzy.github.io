@@ -67,9 +67,9 @@ and (-webkit-min-device-pixel-ratio: 2){
 
     #calculator{
         display: grid;
-        grid-template-columns: repeat(4,100px);
-        grid-auto-rows: minmax(50,100);
-        grid-row-gap: 10px;
-        grid-column-gap: 5px;
+        grid-template-columns: repeat(4,200px);
+        grid-auto-rows: minmax(50,200);
+        grid-row-gap: 20px;
+        grid-column-gap: 10px;
     }
 }
