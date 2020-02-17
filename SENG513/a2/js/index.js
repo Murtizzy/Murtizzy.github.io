@@ -1,13 +1,7 @@
-$(document).ready(function() {
-    console.log($("#butt5").html)
-});
-
-
 function go(){
     let display = document.getElementById("butt1");
     let temp = display.value;
-    console.log(validExp());
-    if(validExp()){
+    if(validExp() && (Infinity!==eval(display.value))){
         display.style.backgroundColor = "white";
         display.value = eval(display.value);
     }
@@ -19,7 +13,6 @@ function go(){
 
 function show(button){
     let butt = document.getElementById(button).innerHTML;
-    console.log("hi");
     document.getElementById("butt1").value += butt; 
 }
 
