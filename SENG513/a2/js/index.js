@@ -1,9 +1,15 @@
+
 function go(){
     let display = document.getElementById("butt1");
     let temp = display.value;
     if(validExp() && (Infinity!==eval(display.value))){
         display.style.backgroundColor = "white";
         display.value = eval(display.value);
+        let deleter = document.getElementById("butt2");
+        deleter.innerHTML = "AC";
+        deleter.addEventListener("click", ()=>{
+            display.value = ""
+        })
     }
     else{
         display.value = temp;
@@ -13,6 +19,9 @@ function go(){
 
 function show(button){
     let butt = document.getElementById(button).innerHTML;
+    let deleter = document.getElementById("butt2");
+    deleter.innerHTML = "CE"
+    deleter.addEventListener("click", del);
     document.getElementById("butt1").value += butt; 
 }
 
