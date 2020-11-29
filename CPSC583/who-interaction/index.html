@@ -120,6 +120,9 @@
                             cards[each].y = (increment+1) * 50; 
                             d3.selectAll(`#CARD-FOR-${each}`).style("top", `${cards[each].y}px`)
                         })
+                        console.clear()
+                        console.log(`${d.properties.name} (id: ${d.id}) deselected.`)
+
                     }
                     else{
                         chosen[this.id] = true;
@@ -132,13 +135,15 @@
                             .style("padding", "10px")
                             .style("background-color", "white")
                             .text(`${d.properties.name}: Fertility rate = ${fertilityById[d.id]}`)
-                            // console.log(d.id)
+                            console.clear()
+                            console.log(`You chose ${d.properties.name} (id: ${d.id})`)
+                            console.log(d);
                             // console.log(d.properties.name)
                     }
-                    // console.log(chosen);
-                    // console.log(cards[this.id]);
-                    // d3.selectAll('path').style("opacity", 0.25);
-                    // d3.selectAll(`#${this.id}`).style("opacity", 1);
+                    console.group("All chosen")
+                    console.log(chosen);
+                    console.groupEnd();
+                    
                     d3.selectAll('path').style("opacity", 0.25);
                     d3.selectAll('circle').style("opacity", 0.25);
                     Object.keys(chosen).forEach(function(i){
@@ -219,7 +224,6 @@
             .data(who)
             .enter().append("circle")
             .attr("id", d => { return "COUNTRY-CODE-"+d.id; } )
-            // .attr("id", d => {return `COUNTRY-CODE-${d.id}`})
             .attr("r", 3.5)
             .attr("cx", xMap)
             .attr("cy", yMap)
@@ -232,7 +236,9 @@
                         Object.keys(cards).forEach(function(each, increment){
                             cards[each].y = (increment+1) * 50; 
                             d3.selectAll(`#CARD-FOR-${each}`).style("top", `${cards[each].y}px`)
-                        })
+                    })
+                    console.clear()
+                    console.log(`${d.Country} deselected.`)
                 }
                 else{
                     chosen[this.id] = true;
@@ -244,8 +250,15 @@
                             .style("top", `${cards[this.id].y}px`)
                             .style("padding", "10px")
                             .style("background-color", "white")
-                            .text(`${d.Country}: Fertility rate = ${d['Total fertility rate (per woman)']}`)
+                            .text(`${d.Country}: Fertility rate = ${d['Total fertility rate (per woman)']}`);
+                    console.clear()
+                    console.log(`You chose ${d.Country}.`);
+                    console.log(d);
+
                 }
+                console.group("All selected")
+                console.log(chosen);
+                console.groupEnd();
             })
             .on("mouseover", function(d) {
                 // console.log(d.Country)
